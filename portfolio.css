@@ -215,7 +215,7 @@ section .title::after{
 
 /* about section styling */
 .about .title::after{
-    content: "who i am";
+    content: "who are we";
 }
 .about .about-content .left{
     width: 45%;
@@ -306,7 +306,7 @@ section .title::after{
 /* skills section styling */
 
 .skills .title::after{
-    content: "what i know";
+    content: "what we know";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -372,7 +372,7 @@ section .title::after{
     width: 40%;
 }
 .skills-content .right .php::before{
-    width: 30%;
+    width: 70%;
 }
 .skills-content .right .mysql::before{
     width: 70%;
