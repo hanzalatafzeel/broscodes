@@ -666,6 +666,11 @@ footer span a:hover{
     .contact .right form .email{
         margin: 0;
     }
+    .services .title::after,
+.teams .title::after{
+    width: 155px;
+    /* content: "what we provide"; */
+}
     .right form .error-box{
        width: 150px;
     }
