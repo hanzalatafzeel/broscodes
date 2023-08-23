@@ -683,3 +683,37 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
+
+/*  code to add class for changing the language */
+
+/* .es, .de, .en, .fr , .hi{ display: none; }
+
+.es:lang(es) {
+ display: block;
+
+  
+}
+
+.hi:lang(hi){
+    display: block;
+}
+
+.de:lang(de) {
+ display: block;
+
+  
+}
+
+.en:lang(en) {
+  display: block;
+
+  
+}
+
+.fr:lang(fr) {
+ display: block;
+
+  
+} */
+
