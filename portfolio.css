@@ -363,19 +363,19 @@ section .title::after{
     background: #0a66c2;
 }
 .skills-content .right .html::before{
-    width: 90%;
+    width: 100%;
 }
 .skills-content .right .css::before{
-    width: 60%;
+    width: 100%;
 }
 .skills-content .right .js::before{
-    width: 40%;
+    width: 100%;
 }
 .skills-content .right .php::before{
-    width: 70%;
+    width: 100%;
 }
 .skills-content .right .mysql::before{
-    width: 70%;
+    width: 100%;
 }
 
 /* teams section styling */
@@ -716,4 +716,29 @@ footer span a:hover{
 
   
 } */
+
+/* web page  */
+.about .about-content .column-right{
+    height: 50%;
+    width: 100%;
+}
+
+/* hire us btn after about section in page web.html */
+.about .about-content a{
+    display: inline-block;
+    background: #0a66c2;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid #0a66c2;
+    transition: all 0.3s ease;
+}
+.about .about-content a:hover{
+    color: #0a66c2;
+    background: none;
+}
+
 
