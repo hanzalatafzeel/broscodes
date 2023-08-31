@@ -82,3 +82,24 @@ $(document).ready(function(){
 //     $('html').prop('lang', lang);
       
 //   });
+
+
+
+// up  btn
+document.addEventListener("DOMContentLoaded", function() {
+    const scrollUpBtn = document.getElementById("scrollUpBtn");
+
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 10) {
+            scrollUpBtn.style.display = "block";
+        } else {
+            scrollUpBtn.style.display = "none";
+        }
+    });
+
+    scrollUpBtn.addEventListener("click", function() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+});
+
