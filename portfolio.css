@@ -44,7 +44,7 @@ section{
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
 }
 section .title{
@@ -276,7 +276,7 @@ section .title::after{
     background: #222;
     text-align: center;
     border-radius: 6px;
-    padding: 50px 25px;
+    padding: 25px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
