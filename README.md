@@ -1,2 +1,2 @@
 # Bro Codes
-### website link: https://hanzalatafzeel.github.io/codeminers/ 
+### https://hanzalatafzeel.github.io/broscodes/ 
