@@ -1,3 +1,3 @@
 # Bro Codes
-### http://broscodes.in/brocodes
+### https://hanzalatafzeel.github.io/broscodes/
 
