@@ -377,6 +377,13 @@ section .title::after{
 .skills-content .right .mysql::before{
     width: 100%;
 }
+.skills-content .right .bootstrap::before{
+    width: 100%;
+}
+.skills-content .right .MERN::before{
+    width: 100%;
+}
+
 
 /* teams section styling */
 .teams .title::after{
