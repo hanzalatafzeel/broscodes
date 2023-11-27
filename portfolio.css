@@ -66,6 +66,16 @@ section .title::before{
     background: #111;
     transform: translateX(-50%);
 }
+section #our-team::before{
+   
+   
+}
+
+h2#Our-team::before {
+    content: "";
+    display: inline-block;
+    width: 240px;
+}
 section .title::after{
     position: absolute;
     bottom: -8px;
@@ -266,6 +276,7 @@ section .title::after{
 .services .title::before,
 .teams .title::before{
     background: #fff;
+    /* width: 240px; */
 }
 .services .title::after,
 .teams .title::after{
@@ -378,6 +389,16 @@ section .title::after{
 .skills-content .right .mysql::before{
     width: 100%;
 }
+.skills-content .right .bootstrap::before{
+    width: 100%;
+}
+.skills-content .right .MERN::before{
+    width: 100%;
+}
+.skills-content .right .Figma::before{
+    width: 100%;
+}
+
 
 /* teams section styling */
 .teams .title::after{
@@ -650,6 +671,14 @@ footer span a:hover{
 }
 
 @media (max-width: 500px) {
+    /* h2#Our-team::before {
+        content: "";
+        display: inline-block;
+        width: 240px;
+    } */
+    #Our-team::after {
+        width: 220px;
+    }
     .home .home-content .text-2{
         font-size: 50px;
     }
