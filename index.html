@@ -40,7 +40,7 @@
         </div>
     </nav>
     <!-- btn -->
-    <button id="scrollUpBtn"></button>
+    <!-- <button id="scrollUpBtn"></button> -->
     <!-- home section start -->
     <section class="home" id="home">
         <div class="max-width">
@@ -145,6 +145,13 @@
                 <div class="column right">
                     <div class="bars">
                         <div class="info">
+                            <span>MERN</span>
+    
+                        </div>
+                        <div class="line MERN"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
                             <span>HTML</span>
                         </div>
                         <div class="line html"></div>
@@ -183,13 +190,6 @@
 
                         </div>
                         <div class="line mysql"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>MERN</span>
-
-                        </div>
-                        <div class="line MERN"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
@@ -396,17 +396,17 @@
                     <form action="#">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <input type="text" placeholder="Name" name="from_name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" placeholder="Email" name="from_email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" placeholder="Subject" name="subject" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                            <textarea cols="30" rows="10" placeholder="Message.." name="message" required></textarea>
                         </div>
                         <div class="button-area">
                             <button type="submit">Send message</button>
