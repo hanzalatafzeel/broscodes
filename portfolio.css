@@ -331,6 +331,11 @@ section .title::after{
     text-align: center; 
 }
 
+.icons8 {
+    margin-left: 80%;
+    font-size: x-small;
+}
+
 .grid-item {
     width: 6rem; 
     height: 3rem;
@@ -348,6 +353,11 @@ section .title::after{
     .grid-item {
         width: calc(100% / 3 - 4rem); /* Adjust as needed */
         margin: 1rem;
+    }
+
+    .icons8 {
+        margin-left: 70%;
+        font-size: x-small;
     }
 }
 

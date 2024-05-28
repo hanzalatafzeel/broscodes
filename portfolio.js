@@ -122,3 +122,7 @@ function sendMessage(event) {
     );
 }
 
+document.addEventListener("contextmenu", function(event) {
+    // Prevent the default right-click behavior
+    event.preventDefault();
+});
