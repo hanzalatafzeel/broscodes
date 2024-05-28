@@ -15,6 +15,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <!-- Email -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("8OBpRv7985oDFk59S"); //EmailJS user ID
+        })();
+    </script>
 
 </head>
 
@@ -45,11 +52,11 @@
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
-                <div class="text-1 en">Hello, Welcome to</div>
-              
+                <div class="text-1 en">Welcome to</div>
+
                 <div class="text-2">Bro Codes</div>
                 <div class="text-3">We are <span class="typing"></span></div>
-                <a href="#contact">Hire Us</a>
+                <!-- <a href="#contact">Hire Us</a> -->
             </div>
         </div>
         <!-- <object data="background.svg" type="image/svg+xml" width="100%" height="100%"></object> -->
@@ -69,10 +76,15 @@
                 </div>
                 <div class="column right">
                     <div class="text">We are <span class="typing-2"></span></div>
-                    <p>Our team is made up of computer science majors who are not only well-versed in the intricacies of
-                        coding and development but are also creative thinkers. We understand the importance of blending
-                        technology with artistic design, and our diverse skills allow us to create websites, apps, and
-                        digital solutions that are both functional and aesthetically pleasing.</p>
+                    <p>At Bro Codes, we are a team of passionate Computer Science majors. We
+                        combine our technical expertise with creative thinking, understanding the importance of blending
+                        cutting-edge technology with artistic design. Our diverse skills in web development, graphics
+                        design, app development, and digital marketing enable us to craft innovative digital solutions
+                        that seamlessly unite functionality and aesthetically captivating experiences. With a deep
+                        commitment to excellence, we strive to deliver products that not only meet but exceed your
+                        expectations.</p>
+                    <div class="text" id="cap">Converting Imagination into <span>Reality</span></div>
+                    <a href="#contact">Contact</a>
                 </div>
             </div>
         </div>
@@ -86,225 +98,236 @@
             <div class="serv-content">
                 <!-- Web design -->
                 <div class="card">
-                        <div class="box">
-                            <i class="fas fa-chart-line"></i>
-                            <div class="text">Web Developer</div>
-                            <p>Stunning websites, flawless functionality.</p>
-                            <p> We're experts in design and development, creating
-                                sites that engage and convert. Collaborative and results-driven, we transform visions
-                                into responsive realities. Elevate your online presence. Contact us today! &nbsp; <br>
-                                &nbsp;</p>
-                        </div>
-                    </a>
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">Web Development</div>
+                        <p>
+                            <strong> Build your online presence</strong> <br>
+                            Create captivating websites with flawless functionality.
+                            As experts in design and development, we craft engaging sites that convert. Collaborative
+                            and
+                            results-driven, we turn visions into responsive masterpieces.
+                            &nbsp; <br>
+                            &nbsp;</p>
+                    </div>
                 </div>
                 <!-- App design -->
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-code"></i>
-                        <div class="text">Apps Design</div>
-                        Elevate your brand with our iOS and Android app expertise. We design and develop seamless apps
-                        that captivate users and drive engagement. Collaborative and results-oriented, we bring your app
-                        vision to life. Ready to enhance your mobile presence? Contact us today!
+                        <div class="text">App Design</div>
+                        <p><strong>Elevate your mobile presence</strong> <br>
+
+                            Enhance your brand with our iOS and Android app expertise. We create seamless apps that
+                            captivate users and boost engagement. Collaborative and results-oriented, we bring your app
+                            vision to life. 
+                        </p>
                     </div>
                 </div>
                 <!-- Graphic design -->
                 <div class="card">
                     <div class="box">
-                        <i class="fas fa-code"></i>
+                        <i class="fas fa-solid fa-palette"></i>
                         <div class="text">Graphic Design</div>
-                        Transform ideas into visuals that resonate.
-                        Our graphic design expertise captures attention and
-                        communicates your message effectively.
-                        Collaborative and detail-oriented, we bring concepts to
-                        life with style and impact. Elevate your brand visually.
-                        Contact us to make an impression today!
+                        <p>
+                            <strong>Enhance your brand visually</strong><br>
+                            Translate ideas into visually compelling designs. Our graphic design expertise captures
+                            attention and effectively communicates your message. Collaborative and detail-oriented, we
+                            bring concepts to life with style and impact. 
+                        </p>
                     </div>
                 </div>
+                
+
             </div>
         </div>
-        </div>
+        
     </section>
 
-    <!-- skills section start -->
+    <!-- Skills -->
     <section class="skills" id="skills">
         <div class="max-width">
             <h2 class="title">Our skills</h2>
             <div class="skills-content">
-                <div class="column left">
-                    <div class="text">Our creative skills & experiences.</div>
-                    <p>
-                    <ul>
-                        <li>Working on a product based site with my team.</li>
-                        <li>Web Developer intern (THE SPARK FOUNDATION)</li>
-                        <li>Working as a Web Designing intern (OASIS INFOBYTE)</li>
-                        <li>Campus Ambassador (CODING NINJAS)</li>
-                    </ul>
-                    </p>
-                    <a href="#">Read more</a>
-                </div>
-                <div class="column right">
-                    <div class="bars">
-                        <div class="info">
-                            <span>MERN</span>
-    
-                        </div>
-                        <div class="line MERN"></div>
+                <div class="grid-container">
+                    <!-- Skill 1 -->
+                    <div class="grid-item">
+                        <img src="/tech stack/html.svg" alt="HTML">
                     </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>HTML</span>
-                        </div>
-                        <div class="line html"></div>
+                    <!-- Skill 2 -->
+                    <div class="grid-item">
+                        <img src="/tech stack/css.svg" alt="CSS">
                     </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>CSS</span>
+                    <!-- Skill 3 -->
+                    <div class="grid-item">
+                        <img src="/tech stack/js.svg" alt="JavaScript">
+                    </div>
+                    <!-- Skill 4 -->
+                    <div class="grid-item">
+                        <img src="/tech stack/node.svg" alt="NodeJS">
+                    </div>
+                    <!-- Skill 5 -->
+                    <div class="grid-item">
+                        <img src="/tech stack/react.svg" alt="ReactS">
+                    </div>
+                    <!-- Skill 6 -->
+                    <div class="grid-item">
+                        <img src="/tech stack/express.svg" alt="ExpressJS">
+                    </div>
+                    
+                    <!-- Skill 7 -->
+                    <div class="grid-item">
+                        <img src="/tech stack/php.svg" alt="PHP">
+                    </div>
+                    <!-- Skill 8 -->
+                    <div class="grid-item">
+                        <img src="/tech stack/java.svg" alt="Java">
+                    </div>
+                    <!-- Skill 9 -->
+                    <div class="grid-item">
+                        <img src="/tech stack/tailwind.svg" alt="Tailwind">
+                    </div>
+                    <!-- skill 10 -->
+                    <div class="grid-item">
+                        <img src="/tech stack/flutter.svg" alt="Flutter">
+                    </div>
+                    <!-- Skill 11 -->
+                    <div class="grid-item">
+                        <img src="/tech stack/django.svg" alt="Django">
+                    </div>
+                    <!-- Skill 12 -->
+                    <div class="grid-item">
+                        <img src="/tech stack/sql.svg" alt="MySQL">
+                    </div>
+                    <!-- Skill 13 -->
+                    <div class="grid-item">
+                        <!-- <img src="/tech stack/mongodb.svg" alt="MongoDB"> -->
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC4klEQVR4nO1ZzW8NURS/Qgg74n8Qdjydc6bRiCBqZdNnJ11gzp1i0USCVS2EBV0Im37MOe+JRrwNC2VRrNiwI5FoQlSCin7YVIJq5b6Oph/z5s6C+ZD+kl8yyb2L3+/cc86cuaPUCv5j6AB8T1CrIkKz06IFf9TJTosqEvyBXRtJ8L0WnDUkgQ9eT2mzKgpIoPZH/ALeVUWAZmyPED9HxnaVZxztw03E8LmRAWIcy3UqkUDQMPrzpwD9Ko/wGHdoxpklYqfrXJxGM2avyhu04GBExKeI4VtEKt1TeYLPbtOy6NeFwgQxTEalkldtdlVeQAJDDYr2k2HkmsCQygN0f/OWqOiHIt9phpFGBe1XYWvW+hUxXolpm6+14HBMV7qcqfhybdvauL6vBV6QwMsYA19OXW1dl5kBCpw2S99/HrLhHgqctuwMMN6yvLSekMDTWAMCA5mI7+ravUYLjMeLw0eG8acE4+VaeXXqBvwKlGxjAzHe1wwPrONF1d2eugFi6LAbgDtmjLYaCMBP3YBm7LUKY7hdp3Uf9qZugBgfJzBQJcYbCfY9TN2AZnxrTSGBPkP7PnyTugEzqFkjK3CNGK4nKPax1A2ENw42YWbM6E5QA99TN0ACPxOcwEVivJRLA1rwawJhXXXa2+1E6gbCSdN2AmeJ8VyCVHuVuoEkb1gKsNPQbhQHMzCAFxKkRocW50SCdns+dQOeuHsT1MCxOi37/IqzJ6NpFEfjxTlH5hhr8mMm06gBsXM6NrLilqmCh211orKC11PaEHcKxM4hw7jod9ZwvcoSxLB/2e3bvED3gCfYGl24+EtX4KDKAxr1elOchpFrDGdUnkACx5eOF+b2zWe3efGpwDQxnlR5BFXQWXgLYT47F356ksAzr79pp8o1ZtWqsC5uzhswzwHuM2uqSNCCw2ZmUkWFZhgx96OqqNCCo+Z2WhUVxDCZyaz/txD+nZlSRYUO/5FlrWMF6h/iNwFD5Zin1tTcAAAAAElFTkSuQmCC">
+                    </div>
+                    <!-- Skill 14 -->
+                    <div class="grid-item">
+                        <img src="/tech stack/psql.svg" alt="PostgreSQL">
+                    </div>
+                    <!-- Skill 15 -->
+                    <div class="grid-item">
+                        <img src="/tech stack/firebase.svg" alt="Firebase">
+                    </div>
+                    
+                    <!-- Skill 16 -->
+                    
+                    <div class="grid-item">
+                        <img src="/tech stack/canva.svg" alt="Canva">
+                    </div>
 
-                        </div>
-                        <div class="line css"></div>
+                    <!-- Skill 17 -->
+                    <div class="grid-item">
+                        <img src="/tech stack/adobe.svg" alt="Adobe PS">
                     </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Bootstrap</span>
 
-                        </div>
-                        <div class="line bootstrap"></div>
+                    <div class="grid-item">
+                        <img src="/tech stack/git.svg" alt="Git">
                     </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>JavaScript</span>
 
-                        </div>
-                        <div class="line js"></div>
+                    
+                    <div class="grid-item">
+                        <img src="/tech stack/github.svg" alt="GitHub">
                     </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>PHP</span>
 
-                        </div>
-                        <div class="line php"></div>
+                    <div class="grid-item">
+                        
+                        <img src="/tech stack/figma.svg" alt="Figma">
                     </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>MySQL</span>
 
-                        </div>
-                        <div class="line mysql"></div>
+                    
+                    <div class="grid-item">
+                        <img src="/tech stack/slack.svg" alt="Slack">
                     </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Figma</span>
-
-                        </div>
-                        <div class="line Figma"></div>
-                    </div>
+                    
+                    <!-- Repeat for additional skills as needed -->
                 </div>
             </div>
         </div>
     </section>
-
+    
+    
     <!-- teams section start -->
     <section class="teams" id="teams">
         <div class="max-width">
             <h2 class="title" id="Our-team">Our team</h2>
-            
+
             <div class="carousel owl-carousel">
                 <div class="card">
                     <div class="box">
                         <img src="portfolioimg/myimg.jpg" alt="">
                         <div class="text">Hanzala Tafzeel</div>
                         <p>
-                        <ul>
-                            <li>Web Developer, Designer</li>
-                            <li>Data Science Intern</li>
-                            <li>Business Analytics</li>
-                            <li>Working on Static Websites</li>
-
-                        </ul>
+                        <ul>Co-Founder</ul>
+                        <ul>Full Stack Developer | Blog Writer</ul>
                         </p>
                     </div>
                 </div>
+
                 <div class="card">
                     <div class="box">
                         <img src="portfolioimg/kaif.jpg" alt="">
                         <div class="text">Kaif Imteyaz</div>
                         <p>
-                        <ul>
-                            <li>Web Designer</li>
-                            <li>Front-end Development</li>
-                            <li>Database Management</li>
-                            <li>Digital Marketing</li>
-                        </ul>
+                        <ul>Co-Founder</ul>
+                        <ul>Full Stack Developer | Blog Writer</ul>
+
                         </p>
                     </div>
                 </div>
-
-
 
                 <div class="card">
                     <div class="box">
                         <img src="portfolioimg/yusuf.jpg" alt="">
                         <div class="text">Yusuf Azam</div>
                         <p>
-                        <ul>
-                            <li>Backend Developer</li>
-                            <li>Management Head</li>
-                            <li>Social Media Marketing</li>
-                            <li>Risk Management</li>
-                        </ul>
+                        <ul>Co-Founder</ul>
+                        <ul>Full Stack Developer</ul>
                         </p>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="box">
-                        <!-- <img src="portfolioimg/" alt=""> -->
                         <img src="portfolioimg/fahad.png" alt="">
-
                         <div class="text">Fahad Ansari</div>
                         <p>
-                        <ul>
-                            <li>Backend Developer</li>
-                            <li>Management Head</li>
-                            <li>Social Media Marketing</li>
-                            <li>Risk Management</li>
-                        </ul>
+                        <ul>Co-Founder</ul>
+                        <ul>Full Stack Developer | Blog Writer</ul>
                         </p>
                     </div>
                 </div>
 
-                
+                <div class="card">
+                    <div class="box">
+                        <img src="portfolioimg/sariq.png" alt="">
+                        <div class="text">Sariq Sohrab</div>
+                        <p>
+                        <ul>Co-Founder</ul>
+                        <ul>Social Media Handler | Blog writer</ul>
+                        </p>
+                    </div>
+                </div>
                 <div class="card">
                     <div class="box">
                         <img src="portfolioimg/Faisal quaiyum.png" alt="">
                         <div class="text">Md Faisal Quaiyum</div>
                         <p>
                         <ul>
-                            <li>Web Designer</li>
-                            <li>Front-end Development</li>
-                            <li>Database Management</li>
-                            <li>Digital Marketing</li>
+                            Front-end Developer
                         </ul>
-                        </p>
-                    </div>
-                </div>
 
-                <div class="card">
-                    <div class="box">
-                        <!-- <img src="portfolioimg/" alt=""> -->
-                        <img src="portfolioimg/sariq.png" alt="">
-
-                        <div class="text">Sariq Sohrab</div>
-                        <p>
                         <ul>
-                            <li>Front-end Developer</li>
-                            <li>Requirment Analysis</li>
-                            <li>Database Management</li>
-                            <li>Risk Management</li>
+                            Social Media Handler | Insta
                         </ul>
+
                         </p>
                     </div>
                 </div>
+
                 <div class="card">
                     <div class="box">
                         <!-- <img src="portfolioimg/" alt=""> -->
@@ -313,11 +336,13 @@
                         <div class="text">Ehtasam Ahmad Raza</div>
                         <p>
                         <ul>
-                            <li>UI/UX Design</li>
-                            <li>Front-end Developer</li>
-                            <li>Integretion & Testing</li>
-                            <li>Architechture Design</li>
+                            Front-end Developer
                         </ul>
+
+                        <ul>
+                            Social Media Handler | LinkedIn
+                        </ul>
+
                         </p>
                     </div>
                 </div>
@@ -329,10 +354,10 @@
                         <div class="text">Shahnawaz Alam</div>
                         <p>
                         <ul>
-                            <li>Back-end Development</li>
-                            <li>Problem Solving</li>
-                            <li>Unit Testing</li>
-                            <li>Risk Management</li>
+                            Backend Developer | Java
+                        </ul>
+                        <ul>
+                            Blog Writer
                         </ul>
                         </p>
                     </div>
@@ -345,14 +370,47 @@
                         <div class="text">Mohd. Danish</div>
                         <p>
                         <ul>
-                            <li>Front-end Developer</li>
-                            <li>Designing</li>
-                            <li>Database Management</li>
-                            <li>Debugging</li>
+                            Front-end Developer
+                        </ul>
+                        <ul>
+                            Digital Marketing
                         </ul>
                         </p>
                     </div>
                 </div>
+                <div class="card">
+                    <div class="box">
+                        <!-- <img src="portfolioimg/" alt=""> -->
+                        <img src="portfolioimg/Dilnawaz" alt="">
+
+                        <div class="text">Shehbaz Ali</div>
+                        <p>
+                        <ul>
+                            Full Stack Developer
+                        </ul>
+                        <ul>
+                            Blog Writer
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <!-- <img src="portfolioimg/" alt=""> -->
+                        <img src="portfolioimg/Dilnawaz" alt="">
+
+                        <div class="text">Md Dilnawaz</div>
+                        <p>
+                        <ul>
+                            Graphics Designer
+                        </ul>
+                        <ul>
+                            Digital Marketing
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -364,7 +422,6 @@
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Get in Touch</div>
-                    <p></p>
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
@@ -393,7 +450,7 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="#">
+                    <form action="#" onsubmit="sendMessage(event)" id="contact-form">
                         <div class="fields">
                             <div class="field name">
                                 <input type="text" placeholder="Name" name="from_name" required>
@@ -417,6 +474,7 @@
         </div>
     </section>
 
+
     <!-- footer section start -->
     <footer>
         <span>Created By <a href="index.html">Bro Codes</a> | &copy; 2023 All rights
@@ -424,6 +482,7 @@
     </footer>
 
     <script src="portfolio.js"></script>
+
 </body>
 
 </html>
