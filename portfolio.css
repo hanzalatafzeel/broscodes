@@ -289,7 +289,7 @@ section .title::after{
     content: "what we provide";
 }
 .services .serv-content .card{
-    width: calc(35% - 30px);
+    width: calc(35% - 35px);
     background: #222;
     text-align: center;
     border-radius: 6px;
@@ -327,16 +327,18 @@ section .title::after{
     content: "what we use";
 }
 
-.skills-content {
-    text-align: center; 
+.skills .skills-content {
+    text-align: center;
+    width: 100%;
+    display: flex; 
 }
 
-.icons8 {
+.skills .icons8 {
     margin-left: 80%;
     font-size: x-small;
 }
 
-.grid-item {
+.skills .grid-item {
     width: 6rem; 
     height: 3rem;
     display: inline-block;
@@ -344,18 +346,18 @@ section .title::after{
     vertical-align: top; 
 }
 @media (max-width: 768px) {
-    .grid-container {
+    .skills .grid-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .grid-item {
+    .skills .grid-item {
         width: calc(100% / 3 - 4rem); /* Adjust as needed */
         margin: 1rem;
     }
 
-    .icons8 {
+    .skills .icons8 {
         margin-left: 70%;
         font-size: x-small;
     }
