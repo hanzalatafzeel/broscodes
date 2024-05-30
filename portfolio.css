@@ -10,6 +10,17 @@
 html{
     scroll-behavior: smooth;
 }
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
 
 /* custom scroll bar */
 ::-webkit-scrollbar {
@@ -320,17 +331,15 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-
 /* skills section styling */
-
-.skills .title::after{
+.skills .title::after {
     content: "what we use";
 }
 
 .skills .max-width .skills-content {
     text-align: center;
     width: 100%;
-    display: flex; 
+    display: flex;
 }
 
 .skills .icons8 {
@@ -338,13 +347,22 @@ section .title::after{
     font-size: x-small;
 }
 
-.skills .skills-content .grid-container .grid-item {
-    width: 6rem; 
-    height: 3rem;
-    display: inline-block;
-    margin: 2rem;
-    vertical-align: top; 
+.skills .skills-content .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.skills .skills-content .grid-container .grid-item {
+    width: 6rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    flex: 0 0 auto; /* Prevent stretching or shrinking */
+}
+
 @media (max-width: 768px) {
     .skills .grid-container {
         display: flex;
@@ -353,7 +371,7 @@ section .title::after{
     }
 
     .skills .grid-item {
-        width: calc(100% / 3 - 4rem); /* Adjust as needed */
+        width: calc(100% / 3 - 4rem); 
         margin: 1rem;
     }
 
@@ -362,7 +380,6 @@ section .title::after{
         font-size: x-small;
     }
 }
-
 /* teams section styling */
 .teams .title::after{
     content: "Dev Behind the Scenes";
