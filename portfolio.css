@@ -327,7 +327,7 @@ section .title::after{
     content: "what we use";
 }
 
-.skills .skills-content {
+.skills .max-width .skills-content {
     text-align: center;
     width: 100%;
     display: flex; 
@@ -338,7 +338,7 @@ section .title::after{
     font-size: x-small;
 }
 
-.skills .grid-item {
+.skills .skills-content .grid-container .grid-item {
     width: 6rem; 
     height: 3rem;
     display: inline-block;
