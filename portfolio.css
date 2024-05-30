@@ -77,10 +77,10 @@ section .title::before{
     background: #111;
     transform: translateX(-50%);
 }
-section #our-team::before{
+/* section #our-team::before{
    
    
-}
+} */
 
 h2#Our-team::before {
     content: "";
