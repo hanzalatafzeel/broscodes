@@ -83,7 +83,6 @@ section{
 }
 .max-width{
     max-width: 1300px;
-    min-width: 500px;
     padding: 0 80px;
     margin: auto;
 }
