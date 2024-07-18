@@ -126,3 +126,61 @@ document.addEventListener("contextmenu", function(event) {
     // Prevent the default right-click behavior
     event.preventDefault();
 });
+
+
+
+/*===== MIXITUP FILTER PORTFOLIO =====*/ 
+var containerEl = document.querySelector('.portfolio__container');
+if (containerEl){
+const mixer = mixitup('.portfolio__container', {
+  selectors: {
+      target: '.portfolio__content'
+  },
+  animation: {
+      duration: 400
+  }
+});
+}
+/* Link active portfolio */ 
+var numberButtons = document.querySelectorAll(".portfolio__item")
+for (var i = 0; i < numberButtons.length; i++) {
+  numberButtons[i].addEventListener("click", changeButton.bind(null, i));
+}
+
+function changeButton(selected, e) {
+  var oldActive = document.getElementsByClassName("active--portfolio");
+  for (var i = 0; i < oldActive.length; i++) {
+    oldActive[i].classList.remove("active--portfolio");
+  }
+  e.target.classList.add("active--portfolio");
+}
+
+
+  
+  
+  
+  /*===== MIXITUP FILTER PORTFOLIO =====*/ 
+  var containerEl = document.querySelector('.portfolio__container');
+  if (containerEl){
+  const mixer = mixitup('.portfolio__container', {
+    selectors: {
+        target: '.portfolio__content'
+    },
+    animation: {
+        duration: 400
+    }
+  });
+  }
+  /* Link active portfolio */ 
+  var numberButtons = document.querySelectorAll(".portfolio__item")
+  for (var i = 0; i < numberButtons.length; i++) {
+    numberButtons[i].addEventListener("click", changeButton.bind(null, i));
+  }
+  
+  function changeButton(selected, e) {
+    var oldActive = document.getElementsByClassName("active--portfolio");
+    for (var i = 0; i < oldActive.length; i++) {
+      oldActive[i].classList.remove("active--portfolio");
+    }
+    e.target.classList.add("active--portfolio");
+  }

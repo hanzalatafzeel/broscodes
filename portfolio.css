@@ -1,6 +1,46 @@
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
+:root{
+    --header-height: 3rem;
+  
+    /*===== Colors =====*/
+    --first-color: #3E0E12;
+    --first-color-dark: #2F0A0D;
+    --text-color: #524748;
+    --first-color-light: #7B6F71;
+    --first-color-lighten: #FBF9F9;
+  
+    /*===== Font and typography =====*/
+    --body-font: 'Poppins', sans-serif;
+    --biggest-font-size: 2.5rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+  
+    /*===== Font weight =====*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+  
+    /*===== Margenes =====*/
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+  
+    /*===== z index =====*/
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+  }
+    
+
 *{
     margin: 0;
     padding: 0;
@@ -43,10 +83,11 @@ section{
 }
 .max-width{
     max-width: 1300px;
+    min-width: 500px;
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .teams, .contact, footer, .portfolio{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
@@ -298,6 +339,13 @@ section .title::after{
 .teams .title::after{
     background: #111;
     content: "what we provide";
+}
+
+
+.portfolio .title::after{
+
+
+    content: "Recent Projects";
 }
 .services .serv-content .card{
     width: calc(35% - 35px);
@@ -554,6 +602,52 @@ footer span a:hover{
 }
 
 
+
+/*===== PORTFOLIO =====*/
+.portfolio__nav{
+    text-align: center;
+    margin-bottom: var(--mb-3);
+  }
+  .portfolio__item{
+    margin:0 var(--mb-2);
+    cursor: pointer;
+  }
+  .portfolio__content{
+    background-color: #fff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(174,190,205,0.3);
+  }
+  .portfolio__content:hover{
+    box-shadow: 0 6px 8px rgba(174,190,205,0.5);
+  }
+  .portfolio__content:hover , .portfolio__img{
+    transform: scale(1.02);
+  }
+  .portfolio__img{
+    width: 100%;
+    object-fit: cover;
+    /* max-height: 250px;  */
+    transition: 0.4s;
+  }
+  .portfolio__data{
+   padding:1.5rem;
+  }
+  .portfolio__subtitle{
+    font-size: var(--small-font-size);
+    color: var(--first-color-light);
+  }
+  .portfolio__title{
+    font-size: var(--h3-font-size);
+    color: var(--first-color);
+    margin: var(--mb-2) 0 ;
+  }
+  /* Active menu portfolio*/
+  .active--portfolio{
+    color:var(--first-color-dark);
+    font-weight: var(--font-semi-bold);
+  }
+
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
@@ -751,6 +845,23 @@ footer span a:hover{
     background: none;
 }
 
+.portfolio .portfolio__data a{
+    display: inline-block;
+    background: #0a66c2;
+    color: #fff;
+    font-size: 20px;
+    padding: 6px 18px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid #0a66c2;
+    transition: all 0.3s ease;
+}
+
+.portfolio .portfolio__data a:hover{
+    color: #0a66c2;
+    background: none;
+}
 
 /* mail */
  a{
@@ -760,3 +871,183 @@ footer span a:hover{
 
 
 /* archive */
+
+
+/*===== VARIABLES CSS =====*/
+:root{
+  --header-height: 3rem;
+
+  /*===== Colors =====*/
+  --first-color: #3E0E12;
+  --first-color-dark: #2F0A0D;
+  --text-color: #524748;
+  --first-color-light: #7B6F71;
+  --first-color-lighten: #FBF9F9;
+
+  /*===== Font and typography =====*/
+  --body-font: 'Poppins', sans-serif;
+  --biggest-font-size: 2.5rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*===== Font weight =====*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*===== Margenes =====*/
+  --mb-1: .5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+
+  /*===== z index =====*/
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+  
+@media screen and (min-width: 768px){
+  :root{
+    --biggest-font-size: 4.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+
+/*===== CLASS CSS =====*/
+/* .section{
+    padding: 4rem 0 2rem 0;
+}
+.section-title, .section-subtitle{
+    text-align: center;
+}
+.section-title{
+    font-size: var(--h1-font-size);
+    color: var(--first-color);
+    margin-bottom: var(--mb-3);
+}
+
+.section-subtitle{
+    display: block;
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-semi-bold);
+} */
+/*===== LAYOUT =====*/
+.bd-grid{
+    display:grid;
+    gap:1.5rem;
+
+}
+
+
+
+
+/*===== PORTFOLIO =====*/
+.portfolio__nav{
+  text-align: center;
+  margin-bottom: var(--mb-3);
+}
+.portfolio__item{
+  margin:0 var(--mb-2);
+  cursor: pointer;
+}
+.portfolio__content{
+  background-color: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(174,190,205,0.3);
+}
+.portfolio__content:hover{
+  box-shadow: 0 6px 8px rgba(174,190,205,0.5);
+}
+.portfolio__content:hover , .portfolio__img{
+  transform: scale(1.02);
+}
+.portfolio__img{
+  width: 100%;
+  transition: 0.4s;
+}
+.portfolio__data{
+ padding:1.5rem;
+}
+.portfolio__subtitle{
+  font-size: var(--small-font-size);
+  color: var(--first-color-light);
+}
+.portfolio__title{
+  font-size: var(--h3-font-size);
+  color: var(--first-color);
+  margin: var(--mb-2) 0 ;
+}
+/* Active menu portfolio*/
+.active--portfolio{
+  color:var(--first-color-dark);
+  font-weight: var(--font-semi-bold);
+}
+
+/*===== MEDIA QUERIES =====*/
+@media screen and (min-width: 576px){
+.home__img img{
+ width: 300px;
+}
+ .portfolio__container{
+  grid-template-columns: repeat(2,1fr);
+}
+
+}
+
+
+@media screen and (min-width: 769px){
+  body{
+    margin:0;
+  }
+  .section{
+    padding-top: 6rem;
+  }
+  .section-title{
+    margin-bottom: var(--mb-5);
+  }
+ 
+ .portfolio__container{
+  grid-template-columns: repeat(3,1fr); 
+ }
+ .project__container{
+   padding:4.5rem 0;
+ }
+ .project__data{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+ }
+ .project__icon, .project__title, .project__desc{
+   margin-bottom: 0;
+ }
+ .project__icon{
+   font-size: 6rem;
+ }
+ .project__title{
+  font-size: 2.5rem;
+ }
+
+}
+
+@media screen and (min-width: 1024px){
+ .bd-container{
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+}
+
